@@ -4,9 +4,8 @@ const reverseString = function(str) {
     let len = arr.length
     for(let i = 0 ; i <= arr.length-1 ; i++){
         reversedArr[i] = arr[arr.length-1-i]
-        reversedArr.join()
     }
-return reversedArr
+return reversedArr.join("")
 };
 
 // Do not edit below this line

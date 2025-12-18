@@ -1,4 +1,13 @@
-const sumAll = function() {
+const sumAll = function(a , b) {
+    let sum = 0
+    if(typeof(a) =='number' && typeof(b) == 'number'){
+        for (let i = a ; i <=b ; i++){
+            sum+=i
+        }
+        return sum  
+    }else{
+         return "Error"
+    }
 
 };
 
