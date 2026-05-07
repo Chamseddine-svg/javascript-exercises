@@ -15,15 +15,6 @@ function userFactory(name){
 
 const user3 = userFactory('Adolf')  //{ name: 'Adolf', userName: 'Adolf@@user' }
 
-// unpacking element:
-const obj = { a: 1, b: 2 };
-
-// equivalent of doing
-// const a = obj.a;
-// const b = obj.b;
-const { a, b } = obj;
-
-
 //Private variables and functions :
 
 function createUser(name) {
@@ -80,3 +71,33 @@ function createPlayer(name, level) {
   const increaseLevel = () => { level++; };
   return Object.assign({}, user, { increaseLevel });
 }
+
+
+//Destracting : creating variable from object properties
+const obj = { a: 1, b: 2 }; //objects
+// equivalent of doing
+// const a = obj.a;
+// const b = obj.b;
+const { a, b } = obj;
+
+
+const array = [1, 2, 3, 4, 5]; //arrays
+// equivalent of doing
+// const zerothEle = array[0];
+// const firstEle = array[1];
+const [zerothEle, firstEle] = array;
+
+
+//The module pattern :
+//IIFEs : Immediately Invoked Function Expressions
+/* 
+Usage:
+create function and call it with no name
+so its not scooped so it stay privet 
+
+This is a function expression
+() => console.log("foo");
+
+The function expression is now an IIFE!
+(() => console.log("foo"))();
+ */
