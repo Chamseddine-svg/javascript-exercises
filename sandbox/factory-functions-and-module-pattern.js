@@ -36,7 +36,7 @@ console.log({
   discordName: josh.discordName,
   reputation: josh.getReputation()
 });
-console.log(josh)
+
 /* {
   name: 'josh',
   discordName: '@josh',
@@ -101,3 +101,5 @@ This is a function expression
 The function expression is now an IIFE!
 (() => console.log("foo"))();
  */
+
+
